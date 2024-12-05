@@ -1,6 +1,0 @@
-@WAD._0016144.backend_HostAddress = http://localhost:5044
-
-GET {{WAD._0016144.backend_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
