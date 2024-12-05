@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>All Books</h1>
+  <div class="books-grid">
+    <div class="book-card" *ngFor="let book of books">
+      <h3>{{ book.title }}</h3>
+      <p><strong>Author:</strong> {{ book.author }}</p>
+      <p><strong>Published:</strong> {{ book.publishedDate | date }}</p>
+      <div class="actions">
+        <button class="btn" [routerLink]="['/book-details', book.id]">
+          View Details
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
